@@ -2,20 +2,7 @@ import math
 import networkx as nx
 import numpy as np
 import random 
-
-def generate_corr_graph(corr):
-    
-    for first_el in corr:
-        
-        for second_el in corr:
-            pass
-            
-            if first_el == second_el:
-                continue
-            #print(first_el,second_el)
-           # print(first_el[0],second_el[0])         
-            print(first_el[0],second_el[0],math.sqrt((float(first_el[1]) - float(second_el[1]))**2 + (float(first_el[2]) - float(second_el[2]))**2))
-                    
+import ast
 
 def genrate_graph(n,min_number,max_number):
     
@@ -52,3 +39,54 @@ def nearest_neighbour(graph):
     has_been.append(vertex)
 
 
+
+def OPT2(Graph):
+    
+    #starting_permutation = np.random.permutation(Graph.number_of_nodes())
+    starting_permutation = list(range(1,Graph.number_of_nodes() +1))
+    number_of_nodes = Graph.number_of_nodes()
+    
+    valuve = caluc_distances(Graph, starting_permutation)
+    best_path = {}
+    
+    best_path[str(starting_permutation)] = valuve
+    best = min(best_path.items(), key=lambda x: x[1]) 
+    
+    no_new_soultion = False
+    old_perm = best[0]
+    old_best = best[1]
+    
+    while(not no_new_soultion):
+        
+        for i in range(0,number_of_nodes):
+            for j in range(i+1,number_of_nodes):
+                #print(i,j)
+                new_permuation = ast.literal_eval(best[0]) 
+                new_permuation[i], new_permuation[j] = new_permuation[j], new_permuation[i]
+                
+                valuve = caluc_distances(Graph, new_permuation)
+                
+                best_path[str(new_permuation)] = valuve
+                
+        best_path[str(starting_permutation)] = valuve
+        best = min(best_path.items(), key=lambda x: x[1]) 
+        #print(best)
+        best_path = {}    
+        
+        if old_best <= best[1]:
+            no_new_soultion = True
+        else:
+            old_perm = best[0]
+            old_best = best[1]
+            #print(old_perm)
+            #print(old_best)
+            
+    print(old_perm)
+    print(old_best)
+    
+def caluc_distances(Graph,permuation):
+    
+    dis = 0
+    for i in range(0,len(permuation) -1):
+        dis = dis + Graph[permuation[i]][permuation[i+1]]['weight']
+    return dis
