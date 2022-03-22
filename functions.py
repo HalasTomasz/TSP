@@ -4,13 +4,17 @@ import numpy as np
 import random 
 import ast
 
-def genrate_graph(n,min_number,max_number):
+def genrate_graph(n,seed,symetric):
     
-    new_graph = nx.complete_graph(n)
-    
+    new_graph = nx.Graph()
+    random.seed(10)
     for i in range(0,n):
-        for j in range(0,n):
-           new_graph[i][j]['weight'] = random.randrange(min_number,max_number)
+        for j in range(i+1,n):
+           new_graph.add_edge(i,j,weight= random.random())
+    
+    if(not symetric):
+        new_graph = new_graph.to_directed()
+        
 
 
 def k_random(graph, k):
