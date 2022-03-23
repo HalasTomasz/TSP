@@ -1,20 +1,19 @@
 import math
 import networkx as nx
 import numpy as np
-import random 
+import random
 import ast
 
-def genrate_graph(n,seed,symetric):
-    
+
+def generate_graph(n, seed, symmetric):
     new_graph = nx.Graph()
     random.seed(10)
-    for i in range(0,n):
-        for j in range(i+1,n):
-           new_graph.add_edge(i,j,weight= random.random())
-    
-    if(not symetric):
+    for i in range(0, n):
+        for j in range(i + 1, n):
+            new_graph.add_edge(i, j, weight=random.random())
+
+    if not symmetric:
         new_graph = new_graph.to_directed()
-        
 
 
 def k_random(graph, k):
@@ -22,75 +21,94 @@ def k_random(graph, k):
     for j in range(0, k):
         perm = np.random.permutation(graph)
         print(perm)
-        sum = 0
+        dist = 0
         for i in range(0, len(perm)):
-            sum += graph[perm[i]][perm[(i+1) % len(perm)]]['weight']
-        if sum < final:
-            final = sum
-    print(sum)
-
-def nearest_neighbour(graph):
-    source = 0
-    has_been = [0]
-    vertices_left = [value for value in graph.nodes() if value not in has_been]
-
-    min = 0
-    vertex = 0
-    for edge in vertices_left:
-        if min == 0 or min > graph[edge[0]][edge[1]]['weight']:
-            min = graph[edge[0]][edge[1]]['weight']
-            vertex = edge[1]
-    has_been.append(vertex)
+            dist += graph[perm[i]][perm[(i + 1) % len(perm)]]['weight']
+        if final == 0 or dist < final:
+            final = dist
+        print(dist)
+    return final
 
 
+def nearest_neighbour(graph, source):
+    route = [source]
+    vertices_left = [value for value in graph.nodes() if value not in route]
+    vertex = source
 
-def OPT2(Graph):
-    
-    #starting_permutation = np.random.permutation(Graph.number_of_nodes())
-    starting_permutation = list(range(1,Graph.number_of_nodes() +1))
-    number_of_nodes = Graph.number_of_nodes()
-    
-    valuve = caluc_distances(Graph, starting_permutation)
-    best_path = {}
-    
-    best_path[str(starting_permutation)] = valuve
-    best = min(best_path.items(), key=lambda x: x[1]) 
-    
-    no_new_soultion = False
+    total = 0
+    while vertices_left:
+        dist = 0
+        for target in vertices_left:
+            if dist == 0 or dist > graph[source][target]['weight']:
+                dist = graph[source][target]['weight']
+                vertex = target
+        route.append(vertex)
+        vertices_left.remove(vertex)
+        # print("source: ", source, ", target: ", vertex, ", distance: ", dist)
+        source = vertex
+        total += dist
+
+    # print("source: ", source, ", target: ", route[0], ", distance: ", graph[source][route[0]]['weight'])
+    total += graph[source][route[0]]['weight']
+    return [route, total]
+
+
+def extended_nearest_neighbour(graph):
+    total = 0
+    final_sol = []
+    for source in graph.nodes():
+        solution = nearest_neighbour(graph, source)
+        if total == 0 or solution[1] < total:
+            total = solution[1]
+            final_sol = solution
+    return final_sol
+
+
+def OPT2(graph):
+    # starting_permutation = np.random.permutation(Graph.number_of_nodes())
+    starting_permutation = list(range(1, graph.number_of_nodes() + 1))
+    number_of_nodes = graph.number_of_nodes()
+
+    value = calc_distances(graph, starting_permutation)
+    best_path = {str(starting_permutation): value}
+
+    best = min(best_path.items(), key=lambda x: x[1])
+
+    no_new_solution = False
     old_perm = best[0]
     old_best = best[1]
-    
-    while(not no_new_soultion):
-        
-        for i in range(0,number_of_nodes):
-            for j in range(i+1,number_of_nodes):
-                #print(i,j)
-                new_permuation = ast.literal_eval(best[0]) 
-                new_permuation[i], new_permuation[j] = new_permuation[j], new_permuation[i]
-                
-                valuve = caluc_distances(Graph, new_permuation)
-                
-                best_path[str(new_permuation)] = valuve
-                
-        best_path[str(starting_permutation)] = valuve
-        best = min(best_path.items(), key=lambda x: x[1]) 
-        #print(best)
-        best_path = {}    
-        
+
+    while not no_new_solution:
+
+        for i in range(0, number_of_nodes):
+            for j in range(i + 1, number_of_nodes):
+                # print(i,j)
+                new_permutation = ast.literal_eval(best[0])
+                new_permutation[i], new_permutation[j] = new_permutation[j], new_permutation[i]
+
+                value = calc_distances(graph, new_permutation)
+
+                best_path[str(new_permutation)] = value
+
+        best_path[str(starting_permutation)] = value
+        best = min(best_path.items(), key=lambda x: x[1])
+        # print(best)
+        best_path = {}
+
         if old_best <= best[1]:
-            no_new_soultion = True
+            no_new_solution = True
         else:
             old_perm = best[0]
             old_best = best[1]
-            #print(old_perm)
-            #print(old_best)
-            
+            # print(old_perm)
+            # print(old_best)
+
     print(old_perm)
     print(old_best)
-    
-def caluc_distances(Graph,permuation):
-    
+
+
+def calc_distances(graph, permutation):
     dis = 0
-    for i in range(0,len(permuation) -1):
-        dis = dis + Graph[permuation[i]][permuation[i+1]]['weight']
+    for i in range(0, len(permutation) - 1):
+        dis = dis + graph[permutation[i]][permutation[i + 1]]['weight']
     return dis

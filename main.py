@@ -1,40 +1,31 @@
-import networkx as nx
-import matplotlib.pyplot as plt
 import tsplib95
-import networkx as nx
 import functions
 
 
 def read_graph(file):
-    
     with open(file) as f:
         problem = tsplib95.read(f)
-        
-    #print(len(list(problem.get_edges())))
-    Graph = problem.get_graph()
-    #print(G.number_of_edges())
-    #print(G.number_of_nodes())
-    #print(G[1][2]['weight'])
-    
-    Graph = Graph.to_directed()
-    #print(G.number_of_edges())
-    #print(G.number_of_nodes())
-    
-    solution = tsplib95.load_solution('bays29.opt.tour')
-    solution = solution.trace_tours('opt.tours')
-    print(solution)
-    #problem.trace_tours(solution)
-    
-    return Graph
+
+    # print(len(list(problem.get_edges())))
+    new_graph = problem.get_graph()
+    # print(new_graph.number_of_edges())
+    # print(new_graph.number_of_nodes())
+    # print(new_graph[1][2]['weight'])
+
+    new_graph = new_graph.to_directed()
+    # print(new_graph.number_of_edges())
+    # print(new_graph.number_of_nodes())
+    #
+    # opt = tsplib95.load('bays29.opt.tour')
+    # print(opt)
+    # print(problem.trace_tours(opt.tours))
+    return new_graph
+
 
 if __name__ == '__main__':
-    Graph = read_graph('bays29.tsp')
-    print(Graph.number_of_edges())
-    functions.OPT2(Graph)
-    
-    # functions.k_random(Graph, 5)
-    #functions.nearest_neighbour(Graph)
+    graph = read_graph('bays29.tsp')
 
-
-# Graf pełny vs graf skierowany?
-
+    # print(functions.k_random(graph, 5))
+    # print(functions.nearest_neighbour(graph, 1))
+    # print(functions.extended_nearest_neighbour(graph))
+    # functions.OPT2(graph)
