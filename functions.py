@@ -20,13 +20,13 @@ def k_random(graph, k):
     final = 0
     for j in range(0, k):
         perm = np.random.permutation(graph)
-        print(perm)
+        #print(perm)
         dist = 0
         for i in range(0, len(perm)):
             dist += graph[perm[i]][perm[(i + 1) % len(perm)]]['weight']
         if final == 0 or dist < final:
             final = dist
-        print(dist)
+        #print(dist)
     return final
 
 
@@ -65,7 +65,8 @@ def extended_nearest_neighbour(graph):
 
 
 def OPT2(graph):
-    # starting_permutation = np.random.permutation(Graph.number_of_nodes())
+    #starting_permutation = np.random.permutation(graph.number_of_nodes())
+    #starting_permutation = starting_permutation + 1
     starting_permutation = list(range(1, graph.number_of_nodes() + 1))
     number_of_nodes = graph.number_of_nodes()
 
@@ -84,7 +85,17 @@ def OPT2(graph):
             for j in range(i + 1, number_of_nodes):
                 # print(i,j)
                 new_permutation = ast.literal_eval(best[0])
-                new_permutation[i], new_permutation[j] = new_permutation[j], new_permutation[i]
+                
+                start = i 
+                finish = j
+                while start < finish:
+                    new_permutation[start], new_permutation[finish] = new_permutation[finish], new_permutation[start]
+                    
+                    finish = finish - 1
+                    start = start + 1
+                #new_permutation[i], new_permutation[j] = new_permutation[j], new_permutation[i]
+                
+                
 
                 value = calc_distances(graph, new_permutation)
 
@@ -109,6 +120,6 @@ def OPT2(graph):
 
 def calc_distances(graph, permutation):
     dis = 0
-    for i in range(0, len(permutation) - 1):
-        dis = dis + graph[permutation[i]][permutation[i + 1]]['weight']
+    for i in range(0, len(permutation)):
+        dis = dis + graph[permutation[i]][permutation[(i + 1) % len(permutation)]]['weight']
     return dis
