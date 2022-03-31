@@ -37,12 +37,13 @@ def my_testes():
 
 
 if __name__ == '__main__':
-    start_test("C:/Users/szyme/PycharmProjects/TSP/Data_Meta")
+   
+    #start_test("C:/Users/denev/TSP/Data_Meta")
     """
     give path to folder with Data
     """
 
-    # my_testes()
+    my_testes()
     """
     generated graph
     """

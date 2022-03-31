@@ -12,16 +12,17 @@ def test from given path
 use it to open and solve tests
 """
 
-
+collector = []
 def test(path):
     print(path)
-    collector = []
-    k = 200
+    global collector
+    sizer = [200,5000,10000] 
+
     node_NN = 1
     file_number = 0
     for filename in os.listdir(path):
         file_number += 1
-        if file_number > 10:
+        if file_number > 20:
             break
         # print(filename)
 
@@ -38,56 +39,72 @@ def test(path):
             graph = graph.to_directed()
 
             if answer:
-                path_to_tour = path_to_folder + "/" + filename.split('.')[0] + ".opt.tour" + "/" + filename.split('.')[
-                    0] + ".opt.tour"
+                path_to_tour = path_to_folder + "/" + filename.split('.')[0] + ".opt.tour" + "/" + filename.split('.')[0] + ".opt.tour"
                 opt = tsplib95.load(path_to_tour)
                 print("Rozwiązanie optymalne: ", problem.trace_tours(opt.tours))
-
-            start = time.time()
-            permutation, solution = functions.k_random(graph, k)
-            end = time.time()
+            for i in sizer:
+                start = time.process_time()
+                permutation, solution = functions.k_random(graph, i)
+                end = time.process_time()
+    
+                if not answer:
+                    collector.append(DataGraph(filename, "KR-" + str(i), end - start, solution, str(permutation), "none"))
+                else:
+                    collector.append(DataGraph(filename, "KR-" + str(i), end - start, solution, str(permutation), opt.tours))
             print("KR")
-
-            if not answer:
-                collector.append(DataGraph(filename, "KR-" + str(k), end - start, solution, str(permutation), "none"))
-            else:
-                collector.append(DataGraph(filename, "KR-" + str(k), end - start, solution, str(permutation), opt))
-
-            start = time.time()
+            start = time.process_time()
             permutation, solution = functions.nearest_neighbour(graph, node_NN)
-            end = time.time()
+            end = time.process_time()
             print("NN")
             if not answer:
-                collector.append(
-                    DataGraph(filename, "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
+                collector.append(DataGraph(filename, "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
             else:
-                collector.append(DataGraph(filename, "NN-" + str(node_NN), end - start, solution, str(permutation), opt))
+                collector.append(DataGraph(filename, "NN-" + str(node_NN), end - start, solution, str(permutation), opt.tours))
 
-            start = time.time()
+            start = time.process_time()
             permutation, solution = functions.extended_nearest_neighbour(graph)
-            end = time.time()
+            end = time.process_time()
             print("ENN")
             if not answer:
                 collector.append(DataGraph(filename, "ENN", end - start, solution, str(permutation), "none"))
             else:
-                collector.append(DataGraph(filename, "ENN", end - start, solution, str(permutation), opt))
+                collector.append(DataGraph(filename, "ENN", end - start, solution, str(permutation), opt.tours))
 
-            start = time.time()
+            start = time.process_time()
             permutation, solution = functions.opt2(graph)
-            end = time.time()
-            print("2OPT")
+            end = time.process_time()
+            print(len(permutation))
 
             if not answer:
                 collector.append(DataGraph(filename, "OPT2", end - start, solution, str(permutation), "none"))
             else:
-                collector.append(DataGraph(filename, "OPT2", end - start, solution, str(permutation), opt))
+                collector.append(DataGraph(filename, "OPT2", end - start, solution, str(permutation), opt.tours))
+            
+            start = time.process_time()
+            permutation, solution = functions.opt2_2(graph)
+            end = time.process_time()
+            
+            if not answer:
+                collector.append(DataGraph(filename, "OPT2_2", end - start, solution, str(permutation), "none"))
+            else:
+                collector.append(DataGraph(filename, "OPT2_2", end - start, solution, str(permutation), opt.tours))
+            
+            start = time.process_time()
+            permutation, solution = functions.opt2_3(graph)
+            end = time.process_time()  
+            print("2OPT2")
+            if not answer:
+                collector.append(DataGraph(filename, "OPT2_3", end - start, solution, str(permutation), "none"))
+            else:
+                collector.append(DataGraph(filename, "OPT2_3", end - start, solution, str(permutation), opt.tours))
+                
     try:
-        file = open("File", "w")
-        json.dump(collector, file, indent=3)
+        with open('C:/Users/denev/TSP/files7.json', 'w') as fout:
+            json.dump(collector , fout)
     except IOError:
         pass
     finally:
-        file.close()
+        fout.close()
 
 
 """
@@ -95,13 +112,12 @@ dic to save data to JSON
 """
 
 
-def DataGraph(Filename, func, time, solution, permutation, opt, ):
+def DataGraph(Filename, func, time, solution, permutation, opt ):
     Dic = {
         'file': Filename,
         'function': func,
         'time': time,
         'solution': solution,
-        'permutation': permutation,
         'optimal_solution': opt
         # 'memory'
 
@@ -121,42 +137,63 @@ def test_auto_generate(seed=100):
     collection = []
     k = 200
     node_NN = 1
-    for n in range(100, 200, 100):
+    sizer = [200,5000,10000] 
+    
+    for n in range(10, 40, 10):
         for graph_type in types:
             graph = functions.generate_graph(n, seed, graph_type)
+            
+            for i in sizer:
+                start = time.process_time()
+                permutation, solution = functions.k_random(graph, i)
+                end = time.process_time()
+                print("KR")
+            
+                collection.append(
+                    DataGraph(graph_type + str(n), "KR-" + str(i), end - start, solution, str(permutation), "none"))
 
-            start = time.time()
-            permutation, solution = functions.k_random(graph, k)
-            end = time.time()
-            print("KR")
-
-            collection.append(
-                DataGraph(graph_type + str(n), "KR-" + str(k), end - start, solution, str(permutation), "none"))
-
-            start = time.time()
+            start = time.process_time()
             permutation, solution = functions.nearest_neighbour(graph, node_NN)
-            end = time.time()
+            end = time.process_time()
             print("NN")
 
-            collection.append(
-                DataGraph(graph_type + str(n), "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
+            collection.append(DataGraph(graph_type + str(n), "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
 
-            start = time.time()
+            start = time.process_time()
             permutation, solution = functions.extended_nearest_neighbour(graph)
-            end = time.time()
+            end = time.process_time()
             print("ENN")
 
             collection.append(DataGraph(graph_type + str(n), "ENN", end - start, solution, str(permutation), "none"))
 
-            start = time.time()
+            start = time.process_time()
+            print("JFF")
             permutation, solution = functions.opt2(graph)
-            end = time.time()
-            print("2OPT")
+            end = time.process_time()
 
-            collection.append(DataGraph(graph_type + str(n), "OPT2", end - start, solution, str(permutation), "none"))
+            start = time.process_time()
+            permutation, solution = functions.opt2(graph)
+            end = time.process_time()
+           
+            collector.append(DataGraph(graph_type + str(n), "OPT2", end - start, solution, str(permutation), "none"))
+           
+            start = time.process_time()
+            permutation, solution = functions.opt2_2(graph)
+            end = time.process_time()
+            
+
+            collector.append(DataGraph(graph_type + str(n), "OPT2_2", end - start, solution, str(permutation), "none"))
+
+            
+            start = time.process_time()
+            permutation, solution = functions.opt2_3(graph)
+            end = time.process_time()  
+            print("2OPT2")
+          
+            collector.append(DataGraph(graph_type + str(n), "OPT2_3", end - start, solution, str(permutation), "none"))
 
     try:
-        file = open("Test", "w")
+        file = open("Test4", "w")
         json.dump(collection, file, indent=3)
     except IOError:
         pass

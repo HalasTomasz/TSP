@@ -1,0 +1,317 @@
+[
+   {
+      "file": "sym10",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 1851,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "KR-5000",
+      "time": 0.171875,
+      "solution": 1915,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "KR-10000",
+      "time": 0.390625,
+      "solution": 1966,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 2219,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 1630,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 2025,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-5000",
+      "time": 0.21875,
+      "solution": 1886,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-10000",
+      "time": 0.40625,
+      "solution": 2077,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 2415,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 1986,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 3399,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-5000",
+      "time": 0.171875,
+      "solution": 2996,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-10000",
+      "time": 0.375,
+      "solution": 2663,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3111,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2518,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 6388,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "KR-5000",
+      "time": 0.328125,
+      "solution": 5299,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "KR-10000",
+      "time": 0.65625,
+      "solution": 5512,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3871,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2249,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 6949,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "KR-5000",
+      "time": 0.375,
+      "solution": 5708,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "KR-10000",
+      "time": 0.609375,
+      "solution": 5261,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3925,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2900,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 7646,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "KR-5000",
+      "time": 0.3125,
+      "solution": 7151,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "KR-10000",
+      "time": 0.640625,
+      "solution": 6905,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3951,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 3722,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 11011,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "KR-5000",
+      "time": 0.4375,
+      "solution": 8554,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "KR-10000",
+      "time": 0.828125,
+      "solution": 9628,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3991,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 2705,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 11269,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-5000",
+      "time": 0.40625,
+      "solution": 9461,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-10000",
+      "time": 0.90625,
+      "solution": 9542,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3125,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 2983,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 12280,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-5000",
+      "time": 0.359375,
+      "solution": 11912,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-10000",
+      "time": 0.78125,
+      "solution": 11251,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 6124,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 5342,
+      "optimal_solution": "none"
+   }
+]
