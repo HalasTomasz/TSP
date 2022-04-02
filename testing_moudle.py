@@ -99,7 +99,7 @@ def test(path):
                 collector.append(DataGraph(filename, "OPT2_3", end - start, solution, str(permutation), opt.tours))
 
     try:
-        with open('C:/Users/szyme/PycharmProjects/TSP/K_random_test.json', 'w') as fout:
+        with open('/tests/K_random_test.json', 'w') as fout:
             json.dump(collector , fout)
     except IOError:
         pass
@@ -193,7 +193,7 @@ def test_auto_generate(seed=100):
                 collection.append(DataGraph(graph_type + str(n), "OPT2_3", end - start, solution, str(permutation), "none"))
 
     try:
-        file = open("K_random_test.json", "w")
+        file = open("tests/K_random_test.json", "w")
         json.dump(collection, file, indent=3)
     except IOError:
         pass

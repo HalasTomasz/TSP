@@ -5,7 +5,7 @@ import seaborn as sns
 
  
 #Random
-df_Data = pd.read_json(r'C:/Users/szyme/PycharmProjects/TSP/Final_test_fulleu.json')
+df_Data = pd.read_json(r'/tests/Final_test_fulleu.json')
 df_Data["file"] = df_Data["file"].astype('category')
 #dfSBST = pd.read_json(r'C:\Users\denev\.spyder-py3\BSTest4') 
 #dfSBST ["Nazwa"] = dfSBST ["Nazwa"].astype('category')
@@ -34,5 +34,5 @@ plt.show()
 # %%
 #sns.lineplot(data = dfSBST, x = 'Tablica', y = 'SCMP',hue = 'Nazwa')
 # %%
-df_Data = pd.read_json(r'C:/Users/szyme/PycharmProjects/TSP/files3.json')
+df_Data = pd.read_json(r'/tests/files3.json')
 df_Data["file"] = df_Data["file"].astype('category')
