@@ -16,7 +16,7 @@ collector = []
 def test(path):
     print(path)
     global collector
-    sizer = [200,5000,10000] 
+    sizer = [200,5000,10000]
 
     node_NN = 1
     file_number = 0
@@ -79,27 +79,27 @@ def test(path):
                 collector.append(DataGraph(filename, "OPT2", end - start, solution, str(permutation), "none"))
             else:
                 collector.append(DataGraph(filename, "OPT2", end - start, solution, str(permutation), opt.tours))
-            
+
             start = time.process_time()
             permutation, solution = functions.opt2_2(graph)
             end = time.process_time()
-            
+
             if not answer:
                 collector.append(DataGraph(filename, "OPT2_2", end - start, solution, str(permutation), "none"))
             else:
                 collector.append(DataGraph(filename, "OPT2_2", end - start, solution, str(permutation), opt.tours))
-            
+
             start = time.process_time()
             permutation, solution = functions.opt2_3(graph)
-            end = time.process_time()  
+            end = time.process_time()
             print("2OPT2")
             if not answer:
                 collector.append(DataGraph(filename, "OPT2_3", end - start, solution, str(permutation), "none"))
             else:
                 collector.append(DataGraph(filename, "OPT2_3", end - start, solution, str(permutation), opt.tours))
-                
+
     try:
-        with open('C:/Users/denev/TSP/files7.json', 'w') as fout:
+        with open('C:/Users/szyme/PycharmProjects/TSP/K_random_test.json', 'w') as fout:
             json.dump(collector , fout)
     except IOError:
         pass
@@ -133,22 +133,22 @@ tests on auto generated graph
 
 
 def test_auto_generate(seed=100):
-    types = ['sym', 'asym', 'full' 'eu']  # ADD undirected graph
+    types = ['sym']  # ADD undirected graph
     collection = []
     k = 200
     node_NN = 1
-    sizer = [200,5000,10000] 
+    sizer = [300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000]
     for i in range(1,5):
-        for n in range(10, 100, 20):
+        for n in range(300, 310, 10):
             for graph_type in types:
                 graph = functions.generate_graph(n, seed, graph_type)
-                
-                for i in sizer:
+
+                for i in range(200, 5000, 200):
                     start = time.process_time()
                     permutation, solution = functions.k_random(graph, i)
                     end = time.process_time()
                     print("KR")
-                
+
                     collection.append(
                         DataGraph(graph_type + str(n), "KR-" + str(i), end - start, solution, str(permutation), "none"))
     
@@ -156,44 +156,44 @@ def test_auto_generate(seed=100):
                 permutation, solution = functions.nearest_neighbour(graph, node_NN)
                 end = time.process_time()
                 print("NN")
-    
+
                 collection.append(DataGraph(graph_type + str(n), "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
-    
+
                 start = time.process_time()
                 permutation, solution = functions.extended_nearest_neighbour(graph)
                 end = time.process_time()
                 print("ENN")
-    
+
                 collection.append(DataGraph(graph_type + str(n), "ENN", end - start, solution, str(permutation), "none"))
-    
+
                 start = time.process_time()
                 print("JFF")
                 permutation, solution = functions.opt2(graph)
                 end = time.process_time()
-    
+
                 start = time.process_time()
                 permutation, solution = functions.opt2(graph)
                 end = time.process_time()
-               
+
                 collection.append(DataGraph(graph_type + str(n), "OPT2", end - start, solution, str(permutation), "none"))
-               
+
                 start = time.process_time()
                 permutation, solution = functions.opt2_2(graph)
                 end = time.process_time()
-                
-    
+
+
                 collection.append(DataGraph(graph_type + str(n), "OPT2_2", end - start, solution, str(permutation), "none"))
-    
-                
+
+
                 start = time.process_time()
                 permutation, solution = functions.opt2_3(graph)
-                end = time.process_time()  
+                end = time.process_time()
                 print("2OPT2")
-              
+
                 collection.append(DataGraph(graph_type + str(n), "OPT2_3", end - start, solution, str(permutation), "none"))
 
     try:
-        file = open("Final_test2", "w")
+        file = open("K_random_test.json", "w")
         json.dump(collection, file, indent=3)
     except IOError:
         pass

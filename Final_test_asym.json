@@ -1,0 +1,212 @@
+[
+   {
+      "file": "asym10",
+      "function": "KR-200",
+      "time": 0.0,
+      "solution": 2830,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-5000",
+      "time": 0.171875,
+      "solution": 1943,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-10000",
+      "time": 0.21875,
+      "solution": 1940,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 2415,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 1986,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "OPT2",
+      "time": 0.0,
+      "solution": 3207.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-200",
+      "time": 0.0,
+      "solution": 10677,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-5000",
+      "time": 0.28125,
+      "solution": 9534,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-10000",
+      "time": 0.578125,
+      "solution": 9366,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3125,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 2983,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "OPT2",
+      "time": 0.109375,
+      "solution": 7418.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 17578,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "KR-5000",
+      "time": 0.4375,
+      "solution": 17281,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "KR-10000",
+      "time": 0.859375,
+      "solution": 17834,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3287,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "ENN",
+      "time": 0.0625,
+      "solution": 2708,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "OPT2",
+      "time": 1.078125,
+      "solution": 8464.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 28369,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "KR-5000",
+      "time": 0.609375,
+      "solution": 26904,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "KR-10000",
+      "time": 1.1875,
+      "solution": 25953,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4341,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "ENN",
+      "time": 0.171875,
+      "solution": 2713,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "OPT2",
+      "time": 3.203125,
+      "solution": 17240.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "KR-200",
+      "time": 0.046875,
+      "solution": 38227,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "KR-5000",
+      "time": 0.765625,
+      "solution": 35812,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "KR-10000",
+      "time": 1.53125,
+      "solution": 35309,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3432,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "ENN",
+      "time": 0.3125,
+      "solution": 3274,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "OPT2",
+      "time": 10.625,
+      "solution": 23602.0,
+      "optimal_solution": "none"
+   }
+]

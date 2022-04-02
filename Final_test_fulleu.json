@@ -1,0 +1,212 @@
+[
+   {
+      "file": "fulleu10",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 3424,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-5000",
+      "time": 0.125,
+      "solution": 3105,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-10000",
+      "time": 0.328125,
+      "solution": 2896,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3111,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2518,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "OPT2",
+      "time": 0.0,
+      "solution": 3198.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 13198,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-5000",
+      "time": 0.328125,
+      "solution": 11710,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-10000",
+      "time": 0.546875,
+      "solution": 11286,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 6124,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 5342,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "OPT2",
+      "time": 0.203125,
+      "solution": 6410.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 22212,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "KR-5000",
+      "time": 0.421875,
+      "solution": 20332,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "KR-10000",
+      "time": 0.90625,
+      "solution": 20156,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 6974,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "ENN",
+      "time": 0.0625,
+      "solution": 6883,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "OPT2",
+      "time": 2.71875,
+      "solution": 7093.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 31310,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "KR-5000",
+      "time": 0.578125,
+      "solution": 29639,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "KR-10000",
+      "time": 1.171875,
+      "solution": 30182,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 8554,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "ENN",
+      "time": 0.140625,
+      "solution": 7439,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "OPT2",
+      "time": 10.984375,
+      "solution": 8023.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 40957,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "KR-5000",
+      "time": 0.765625,
+      "solution": 39872,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "KR-10000",
+      "time": 1.515625,
+      "solution": 38806,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 8729,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "ENN",
+      "time": 0.328125,
+      "solution": 8443,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "OPT2",
+      "time": 30.484375,
+      "solution": 9003.0,
+      "optimal_solution": "none"
+   }
+]
