@@ -2,22 +2,22 @@
    {
       "file": "sym10",
       "function": "KR-200",
-      "time": 0.015625,
-      "solution": 1851,
+      "time": 0.0,
+      "solution": 2007,
       "optimal_solution": "none"
    },
    {
       "file": "sym10",
       "function": "KR-5000",
-      "time": 0.171875,
-      "solution": 1915,
+      "time": 0.234375,
+      "solution": 1630,
       "optimal_solution": "none"
    },
    {
       "file": "sym10",
       "function": "KR-10000",
-      "time": 0.390625,
-      "solution": 1966,
+      "time": 0.421875,
+      "solution": 1646,
       "optimal_solution": "none"
    },
    {
@@ -35,24 +35,45 @@
       "optimal_solution": "none"
    },
    {
+      "file": "sym10",
+      "function": "OPT2",
+      "time": 0.0,
+      "solution": 2938.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "OPT2_2",
+      "time": 0.0,
+      "solution": 2700.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "OPT2_3",
+      "time": 0.0,
+      "solution": 2405.0,
+      "optimal_solution": "none"
+   },
+   {
       "file": "asym10",
       "function": "KR-200",
-      "time": 0.015625,
-      "solution": 2025,
+      "time": 0.03125,
+      "solution": 2700,
       "optimal_solution": "none"
    },
    {
       "file": "asym10",
       "function": "KR-5000",
-      "time": 0.21875,
-      "solution": 1886,
+      "time": 0.15625,
+      "solution": 2153,
       "optimal_solution": "none"
    },
    {
       "file": "asym10",
       "function": "KR-10000",
-      "time": 0.40625,
-      "solution": 2077,
+      "time": 0.46875,
+      "solution": 2146,
       "optimal_solution": "none"
    },
    {
@@ -70,24 +91,45 @@
       "optimal_solution": "none"
    },
    {
+      "file": "asym10",
+      "function": "OPT2",
+      "time": 0.0,
+      "solution": 3207.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "OPT2_2",
+      "time": 0.0,
+      "solution": 2946.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "OPT2_3",
+      "time": 0.0,
+      "solution": 2965.0,
+      "optimal_solution": "none"
+   },
+   {
       "file": "fulleu10",
       "function": "KR-200",
-      "time": 0.015625,
-      "solution": 3399,
+      "time": 0.0,
+      "solution": 3464,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu10",
       "function": "KR-5000",
-      "time": 0.171875,
-      "solution": 2996,
+      "time": 0.203125,
+      "solution": 2659,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu10",
       "function": "KR-10000",
-      "time": 0.375,
-      "solution": 2663,
+      "time": 0.546875,
+      "solution": 2664,
       "optimal_solution": "none"
    },
    {
@@ -105,24 +147,45 @@
       "optimal_solution": "none"
    },
    {
+      "file": "fulleu10",
+      "function": "OPT2",
+      "time": 0.0,
+      "solution": 3198.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "OPT2_2",
+      "time": 0.0,
+      "solution": 3202.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "OPT2_3",
+      "time": 0.0,
+      "solution": 2517.0,
+      "optimal_solution": "none"
+   },
+   {
       "file": "sym20",
       "function": "KR-200",
       "time": 0.015625,
-      "solution": 6388,
+      "solution": 6715,
       "optimal_solution": "none"
    },
    {
       "file": "sym20",
       "function": "KR-5000",
-      "time": 0.328125,
-      "solution": 5299,
+      "time": 0.296875,
+      "solution": 6103,
       "optimal_solution": "none"
    },
    {
       "file": "sym20",
       "function": "KR-10000",
-      "time": 0.65625,
-      "solution": 5512,
+      "time": 0.59375,
+      "solution": 5524,
       "optimal_solution": "none"
    },
    {
@@ -135,29 +198,50 @@
    {
       "file": "sym20",
       "function": "ENN",
-      "time": 0.0,
+      "time": 0.015625,
       "solution": 2249,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "OPT2",
+      "time": 0.03125,
+      "solution": 3365.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "OPT2_2",
+      "time": 0.03125,
+      "solution": 3378.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "OPT2_3",
+      "time": 0.0625,
+      "solution": 2853.0,
       "optimal_solution": "none"
    },
    {
       "file": "asym20",
       "function": "KR-200",
-      "time": 0.03125,
-      "solution": 6949,
+      "time": 0.0,
+      "solution": 7581,
       "optimal_solution": "none"
    },
    {
       "file": "asym20",
       "function": "KR-5000",
-      "time": 0.375,
-      "solution": 5708,
+      "time": 0.265625,
+      "solution": 5677,
       "optimal_solution": "none"
    },
    {
       "file": "asym20",
       "function": "KR-10000",
-      "time": 0.609375,
-      "solution": 5261,
+      "time": 0.578125,
+      "solution": 5388,
       "optimal_solution": "none"
    },
    {
@@ -170,29 +254,50 @@
    {
       "file": "asym20",
       "function": "ENN",
-      "time": 0.0,
+      "time": 0.015625,
       "solution": 2900,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "OPT2",
+      "time": 0.015625,
+      "solution": 5967.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "OPT2_2",
+      "time": 0.03125,
+      "solution": 5323.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "OPT2_3",
+      "time": 0.015625,
+      "solution": 6849.0,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu20",
       "function": "KR-200",
       "time": 0.015625,
-      "solution": 7646,
+      "solution": 8253,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu20",
       "function": "KR-5000",
-      "time": 0.3125,
-      "solution": 7151,
+      "time": 0.265625,
+      "solution": 7227,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu20",
       "function": "KR-10000",
-      "time": 0.640625,
-      "solution": 6905,
+      "time": 0.625,
+      "solution": 6890,
       "optimal_solution": "none"
    },
    {
@@ -210,24 +315,45 @@
       "optimal_solution": "none"
    },
    {
+      "file": "fulleu20",
+      "function": "OPT2",
+      "time": 0.046875,
+      "solution": 4924.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "OPT2_2",
+      "time": 0.0625,
+      "solution": 4488.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "OPT2_3",
+      "time": 0.046875,
+      "solution": 4388.0,
+      "optimal_solution": "none"
+   },
+   {
       "file": "sym30",
       "function": "KR-200",
       "time": 0.015625,
-      "solution": 11011,
+      "solution": 10998,
       "optimal_solution": "none"
    },
    {
       "file": "sym30",
       "function": "KR-5000",
-      "time": 0.4375,
-      "solution": 8554,
+      "time": 0.328125,
+      "solution": 10012,
       "optimal_solution": "none"
    },
    {
       "file": "sym30",
       "function": "KR-10000",
-      "time": 0.828125,
-      "solution": 9628,
+      "time": 0.734375,
+      "solution": 9586,
       "optimal_solution": "none"
    },
    {
@@ -240,29 +366,50 @@
    {
       "file": "sym30",
       "function": "ENN",
-      "time": 0.015625,
+      "time": 0.0,
       "solution": 2705,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "OPT2",
+      "time": 0.328125,
+      "solution": 3604.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "OPT2_2",
+      "time": 0.28125,
+      "solution": 3376.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "OPT2_3",
+      "time": 0.25,
+      "solution": 3125.0,
       "optimal_solution": "none"
    },
    {
       "file": "asym30",
       "function": "KR-200",
       "time": 0.015625,
-      "solution": 11269,
+      "solution": 9740,
       "optimal_solution": "none"
    },
    {
       "file": "asym30",
       "function": "KR-5000",
-      "time": 0.40625,
-      "solution": 9461,
+      "time": 0.328125,
+      "solution": 9540,
       "optimal_solution": "none"
    },
    {
       "file": "asym30",
       "function": "KR-10000",
-      "time": 0.90625,
-      "solution": 9542,
+      "time": 0.734375,
+      "solution": 8570,
       "optimal_solution": "none"
    },
    {
@@ -280,24 +427,45 @@
       "optimal_solution": "none"
    },
    {
+      "file": "asym30",
+      "function": "OPT2",
+      "time": 0.15625,
+      "solution": 7418.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "OPT2_2",
+      "time": 0.109375,
+      "solution": 8434.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "OPT2_3",
+      "time": 0.09375,
+      "solution": 9010.0,
+      "optimal_solution": "none"
+   },
+   {
       "file": "fulleu30",
       "function": "KR-200",
       "time": 0.015625,
-      "solution": 12280,
+      "solution": 12482,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu30",
       "function": "KR-5000",
       "time": 0.359375,
-      "solution": 11912,
+      "solution": 11512,
       "optimal_solution": "none"
    },
    {
       "file": "fulleu30",
       "function": "KR-10000",
-      "time": 0.78125,
-      "solution": 11251,
+      "time": 0.703125,
+      "solution": 10490,
       "optimal_solution": "none"
    },
    {
@@ -312,6 +480,27 @@
       "function": "ENN",
       "time": 0.015625,
       "solution": 5342,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "OPT2",
+      "time": 0.265625,
+      "solution": 6410.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "OPT2_2",
+      "time": 0.3125,
+      "solution": 7166.0,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "OPT2_3",
+      "time": 0.3125,
+      "solution": 6109.0,
       "optimal_solution": "none"
    }
 ]

@@ -1,0 +1,947 @@
+[
+   {
+      "file": "sym10",
+      "function": "KR-200",
+      "time": 0.0,
+      "solution": 2933,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "KR-5000",
+      "time": 0.140625,
+      "solution": 1873,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "KR-10000",
+      "time": 0.3125,
+      "solution": 1915,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 2219,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 1630,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-200",
+      "time": 0.0,
+      "solution": 2890,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-5000",
+      "time": 0.15625,
+      "solution": 1783,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "KR-10000",
+      "time": 0.390625,
+      "solution": 2014,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 2415,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 1986,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-200",
+      "time": 0.0,
+      "solution": 3463,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-5000",
+      "time": 0.171875,
+      "solution": 3008,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "KR-10000",
+      "time": 0.328125,
+      "solution": 2854,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3111,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu10",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2518,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 6108,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "KR-5000",
+      "time": 0.25,
+      "solution": 5854,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "KR-10000",
+      "time": 0.46875,
+      "solution": 5527,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3871,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym20",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2249,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 6054,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "KR-5000",
+      "time": 0.21875,
+      "solution": 6197,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "KR-10000",
+      "time": 0.46875,
+      "solution": 5576,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3925,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym20",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 2900,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "KR-200",
+      "time": 0.0,
+      "solution": 7717,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "KR-5000",
+      "time": 0.25,
+      "solution": 7041,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "KR-10000",
+      "time": 0.53125,
+      "solution": 6692,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3951,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu20",
+      "function": "ENN",
+      "time": 0.0,
+      "solution": 3722,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 11171,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "KR-5000",
+      "time": 0.359375,
+      "solution": 10003,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "KR-10000",
+      "time": 0.75,
+      "solution": 9681,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3991,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 2705,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 10428,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-5000",
+      "time": 0.3125,
+      "solution": 9684,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "KR-10000",
+      "time": 0.59375,
+      "solution": 9352,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3125,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 2983,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 12391,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-5000",
+      "time": 0.296875,
+      "solution": 11837,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "KR-10000",
+      "time": 0.609375,
+      "solution": 11548,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 6124,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu30",
+      "function": "ENN",
+      "time": 0.015625,
+      "solution": 5342,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym40",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 14135,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym40",
+      "function": "KR-5000",
+      "time": 0.40625,
+      "solution": 13989,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym40",
+      "function": "KR-10000",
+      "time": 0.78125,
+      "solution": 13651,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym40",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4194,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym40",
+      "function": "ENN",
+      "time": 0.03125,
+      "solution": 2980,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym40",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 15053,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym40",
+      "function": "KR-5000",
+      "time": 0.4375,
+      "solution": 13084,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym40",
+      "function": "KR-10000",
+      "time": 0.921875,
+      "solution": 13153,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym40",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 2885,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym40",
+      "function": "ENN",
+      "time": 0.03125,
+      "solution": 2284,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu40",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 16140,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu40",
+      "function": "KR-5000",
+      "time": 0.421875,
+      "solution": 16070,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu40",
+      "function": "KR-10000",
+      "time": 0.875,
+      "solution": 15685,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu40",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 6374,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu40",
+      "function": "ENN",
+      "time": 0.03125,
+      "solution": 5429,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym50",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 18797,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym50",
+      "function": "KR-5000",
+      "time": 0.5625,
+      "solution": 18179,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym50",
+      "function": "KR-10000",
+      "time": 1.078125,
+      "solution": 16464,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym50",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4621,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym50",
+      "function": "ENN",
+      "time": 0.0625,
+      "solution": 2650,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 20095,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "KR-5000",
+      "time": 0.578125,
+      "solution": 17546,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "KR-10000",
+      "time": 1.125,
+      "solution": 17536,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3287,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym50",
+      "function": "ENN",
+      "time": 0.078125,
+      "solution": 2708,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 21044,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "KR-5000",
+      "time": 0.609375,
+      "solution": 21224,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "KR-10000",
+      "time": 1.015625,
+      "solution": 20327,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 6974,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu50",
+      "function": "ENN",
+      "time": 0.0625,
+      "solution": 6883,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym60",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 22806,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym60",
+      "function": "KR-5000",
+      "time": 0.609375,
+      "solution": 21221,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym60",
+      "function": "KR-10000",
+      "time": 1.109375,
+      "solution": 21605,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym60",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3835,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym60",
+      "function": "ENN",
+      "time": 0.109375,
+      "solution": 3048,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym60",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 23715,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym60",
+      "function": "KR-5000",
+      "time": 0.609375,
+      "solution": 21489,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym60",
+      "function": "KR-10000",
+      "time": 1.28125,
+      "solution": 21629,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym60",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4946,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym60",
+      "function": "ENN",
+      "time": 0.109375,
+      "solution": 3716,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu60",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 27952,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu60",
+      "function": "KR-5000",
+      "time": 0.609375,
+      "solution": 25573,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu60",
+      "function": "KR-10000",
+      "time": 1.21875,
+      "solution": 24815,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu60",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 7834,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu60",
+      "function": "ENN",
+      "time": 0.109375,
+      "solution": 6666,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym70",
+      "function": "KR-200",
+      "time": 0.015625,
+      "solution": 28704,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym70",
+      "function": "KR-5000",
+      "time": 0.671875,
+      "solution": 26159,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym70",
+      "function": "KR-10000",
+      "time": 1.359375,
+      "solution": 26584,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym70",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4685,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym70",
+      "function": "ENN",
+      "time": 0.171875,
+      "solution": 3604,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 28161,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "KR-5000",
+      "time": 0.875,
+      "solution": 26472,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "KR-10000",
+      "time": 1.5,
+      "solution": 26033,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4341,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym70",
+      "function": "ENN",
+      "time": 0.203125,
+      "solution": 2713,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 31116,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "KR-5000",
+      "time": 0.875,
+      "solution": 30153,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "KR-10000",
+      "time": 1.75,
+      "solution": 29388,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 8554,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu70",
+      "function": "ENN",
+      "time": 0.21875,
+      "solution": 7439,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym80",
+      "function": "KR-200",
+      "time": 0.046875,
+      "solution": 33662,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym80",
+      "function": "KR-5000",
+      "time": 1.328125,
+      "solution": 31053,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym80",
+      "function": "KR-10000",
+      "time": 1.875,
+      "solution": 30775,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym80",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 5296,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym80",
+      "function": "ENN",
+      "time": 0.296875,
+      "solution": 3815,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym80",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 34109,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym80",
+      "function": "KR-5000",
+      "time": 0.84375,
+      "solution": 31344,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym80",
+      "function": "KR-10000",
+      "time": 1.625,
+      "solution": 31190,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym80",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 4251,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym80",
+      "function": "ENN",
+      "time": 0.265625,
+      "solution": 3532,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu80",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 35743,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu80",
+      "function": "KR-5000",
+      "time": 1.1875,
+      "solution": 33732,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu80",
+      "function": "KR-10000",
+      "time": 1.9375,
+      "solution": 33129,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu80",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 8757,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu80",
+      "function": "ENN",
+      "time": 0.3125,
+      "solution": 8174,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym90",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 39264,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym90",
+      "function": "KR-5000",
+      "time": 0.96875,
+      "solution": 35868,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym90",
+      "function": "KR-10000",
+      "time": 1.90625,
+      "solution": 34807,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym90",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3918,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym90",
+      "function": "ENN",
+      "time": 0.421875,
+      "solution": 3918,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 38004,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "KR-5000",
+      "time": 1.046875,
+      "solution": 34418,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "KR-10000",
+      "time": 2.03125,
+      "solution": 34948,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 3432,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "asym90",
+      "function": "ENN",
+      "time": 0.390625,
+      "solution": 3274,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "KR-200",
+      "time": 0.03125,
+      "solution": 40835,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "KR-5000",
+      "time": 1.046875,
+      "solution": 39428,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "KR-10000",
+      "time": 1.921875,
+      "solution": 38898,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "NN-1",
+      "time": 0.0,
+      "solution": 8729,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "fulleu90",
+      "function": "ENN",
+      "time": 0.40625,
+      "solution": 8443,
+      "optimal_solution": "none"
+   }
+]

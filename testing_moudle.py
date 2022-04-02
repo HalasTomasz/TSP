@@ -138,62 +138,62 @@ def test_auto_generate(seed=100):
     k = 200
     node_NN = 1
     sizer = [200,5000,10000] 
+    for i in range(1,5):
+        for n in range(10, 100, 20):
+            for graph_type in types:
+                graph = functions.generate_graph(n, seed, graph_type)
+                
+                for i in sizer:
+                    start = time.process_time()
+                    permutation, solution = functions.k_random(graph, i)
+                    end = time.process_time()
+                    print("KR")
+                
+                    collection.append(
+                        DataGraph(graph_type + str(n), "KR-" + str(i), end - start, solution, str(permutation), "none"))
     
-    for n in range(10, 40, 10):
-        for graph_type in types:
-            graph = functions.generate_graph(n, seed, graph_type)
-            
-            for i in sizer:
                 start = time.process_time()
-                permutation, solution = functions.k_random(graph, i)
+                permutation, solution = functions.nearest_neighbour(graph, node_NN)
                 end = time.process_time()
-                print("KR")
-            
-                collection.append(
-                    DataGraph(graph_type + str(n), "KR-" + str(i), end - start, solution, str(permutation), "none"))
-
-            start = time.process_time()
-            permutation, solution = functions.nearest_neighbour(graph, node_NN)
-            end = time.process_time()
-            print("NN")
-
-            collection.append(DataGraph(graph_type + str(n), "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
-
-            start = time.process_time()
-            permutation, solution = functions.extended_nearest_neighbour(graph)
-            end = time.process_time()
-            print("ENN")
-
-            collection.append(DataGraph(graph_type + str(n), "ENN", end - start, solution, str(permutation), "none"))
-
-            start = time.process_time()
-            print("JFF")
-            permutation, solution = functions.opt2(graph)
-            end = time.process_time()
-
-            start = time.process_time()
-            permutation, solution = functions.opt2(graph)
-            end = time.process_time()
-           
-            collector.append(DataGraph(graph_type + str(n), "OPT2", end - start, solution, str(permutation), "none"))
-           
-            start = time.process_time()
-            permutation, solution = functions.opt2_2(graph)
-            end = time.process_time()
-            
-
-            collector.append(DataGraph(graph_type + str(n), "OPT2_2", end - start, solution, str(permutation), "none"))
-
-            
-            start = time.process_time()
-            permutation, solution = functions.opt2_3(graph)
-            end = time.process_time()  
-            print("2OPT2")
-          
-            collector.append(DataGraph(graph_type + str(n), "OPT2_3", end - start, solution, str(permutation), "none"))
+                print("NN")
+    
+                collection.append(DataGraph(graph_type + str(n), "NN-" + str(node_NN), end - start, solution, str(permutation), "none"))
+    
+                start = time.process_time()
+                permutation, solution = functions.extended_nearest_neighbour(graph)
+                end = time.process_time()
+                print("ENN")
+    
+                collection.append(DataGraph(graph_type + str(n), "ENN", end - start, solution, str(permutation), "none"))
+    
+                start = time.process_time()
+                print("JFF")
+                permutation, solution = functions.opt2(graph)
+                end = time.process_time()
+    
+                start = time.process_time()
+                permutation, solution = functions.opt2(graph)
+                end = time.process_time()
+               
+                collection.append(DataGraph(graph_type + str(n), "OPT2", end - start, solution, str(permutation), "none"))
+               
+                start = time.process_time()
+                permutation, solution = functions.opt2_2(graph)
+                end = time.process_time()
+                
+    
+                collection.append(DataGraph(graph_type + str(n), "OPT2_2", end - start, solution, str(permutation), "none"))
+    
+                
+                start = time.process_time()
+                permutation, solution = functions.opt2_3(graph)
+                end = time.process_time()  
+                print("2OPT2")
+              
+                collection.append(DataGraph(graph_type + str(n), "OPT2_3", end - start, solution, str(permutation), "none"))
 
     try:
-        file = open("Test4", "w")
+        file = open("Final_test2", "w")
         json.dump(collection, file, indent=3)
     except IOError:
         pass
