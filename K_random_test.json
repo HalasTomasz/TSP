@@ -1,0 +1,170 @@
+[
+   {
+      "file": "sym300",
+      "function": "KR-200",
+      "time": 0.140625,
+      "solution": 135313,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-400",
+      "time": 0.265625,
+      "solution": 134699,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-600",
+      "time": 0.375,
+      "solution": 135606,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-800",
+      "time": 0.53125,
+      "solution": 131593,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-1000",
+      "time": 0.65625,
+      "solution": 135792,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-1200",
+      "time": 0.796875,
+      "solution": 132115,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-1400",
+      "time": 0.921875,
+      "solution": 132505,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-1600",
+      "time": 1.046875,
+      "solution": 133072,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-1800",
+      "time": 1.1875,
+      "solution": 132319,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-2000",
+      "time": 1.375,
+      "solution": 131796,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-2200",
+      "time": 1.46875,
+      "solution": 129653,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-2400",
+      "time": 1.671875,
+      "solution": 132251,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-2600",
+      "time": 1.796875,
+      "solution": 132947,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-2800",
+      "time": 1.84375,
+      "solution": 130857,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-3000",
+      "time": 1.953125,
+      "solution": 131113,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-3200",
+      "time": 2.03125,
+      "solution": 129778,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-3400",
+      "time": 2.171875,
+      "solution": 131055,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-3600",
+      "time": 2.28125,
+      "solution": 128656,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-3800",
+      "time": 2.421875,
+      "solution": 129154,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-4000",
+      "time": 2.546875,
+      "solution": 133561,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-4200",
+      "time": 2.671875,
+      "solution": 130692,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-4400",
+      "time": 2.9375,
+      "solution": 129000,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-4600",
+      "time": 3.03125,
+      "solution": 129570,
+      "optimal_solution": "none"
+   },
+   {
+      "file": "sym300",
+      "function": "KR-4800",
+      "time": 3.15625,
+      "solution": 131486,
+      "optimal_solution": "none"
+   }
+]
